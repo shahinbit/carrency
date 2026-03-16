@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donut SMP — Survive, Grind, Dominate</title>
+    <title>Donut SMP — The Biggest Economy Server</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -17,19 +17,30 @@
             --glass: rgba(10, 25, 47, 0.75);
         }
 
-        body { background-color: var(--bg-dark); color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        body { background-color: var(--bg-dark); color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; margin: 0; }
         .font-heading { font-family: 'Montserrat', sans-serif; }
 
-        /* LOADER STYLES */
+        /* LOADER STYLES - FORCED CENTERING */
         #loader-wrapper {
             position: fixed;
-            inset: 0;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
             z-index: 9999;
             background-color: var(--bg-dark);
             display: flex;
             align-items: center;
             justify-content: center;
             transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+
+        #loader-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
         }
 
         .loader-logo-container {
@@ -75,7 +86,6 @@
             color: var(--cyan);
             margin-bottom: 0.6rem;
             text-shadow: 0 0 10px rgba(0, 209, 255, 0.4);
-            text-align: center;
         }
 
         .loader-percentage {
@@ -84,7 +94,6 @@
             font-size: 18px;
             color: white;
             margin-bottom: 1.5rem;
-            text-align: center;
         }
 
         .loader-bar-bg {
@@ -168,6 +177,9 @@
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: var(--bg-dark); }
         ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+        
+        
+        
     </style>
 </head>
 <body class="antialiased selection:bg-blue-500">
@@ -179,12 +191,8 @@
                 <div class="loader-ring"></div>
                 <img src="input_file_0.png" class="loader-logo" alt="Donut Logo">
             </div>
-            
-            <div class="loader-text-top">Connecting to Hub</div>
-            <div class="loader-percentage" id="loader-percent">0%</div>
-            
-            <div class="loader-bar-bg">
-                <div id="loader-bar-fill"></div>
+   
+ 
             </div>
         </div>
     </div>
@@ -202,8 +210,8 @@
                 <a href="https://store.donutsmp.net/store" target="_blank" class="hover:text-cyan transition-colors">Store</a>
             </div>
 
-            <a href="https://discord.gg/donutsmp" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded-xl font-bold text-sm hover:bg-blue-400 transition-all shadow-lg">
-                JOIN DISCORD
+            <a href="https://store.donutsmp.net/store" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded-xl font-bold text-sm hover:bg-blue-400 transition-all shadow-lg">
+                STORE
             </a>
         </div>
     </nav>
@@ -217,11 +225,17 @@
         <div class="hero-content text-center px-6">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass mb-8 border-blue-500/30">
                 <span class="w-2 h-2 bg-cyan rounded-full animate-pulse shadow-[0_0_10px_#00d1ff]"></span>
-                <span class="text-[10px] font-black tracking-[0.2em] text-blue-100 uppercase">Online & Active • 600K+ Discord Members</span>
+                <span class="text-[10px] font-black tracking-[0.2em] text-blue-100 uppercase">• 50k+ Minecraft players</span>
             </div>
             
+            
+            
+               
+            
+            
+         
             <h1 class="font-heading text-6xl md:text-9xl font-black mb-6 leading-[0.85] tracking-tighter reveal">
-                SURVIVE.<br/><span class="text-blue-500">DOMINATE.</span>
+                DONUT<br/><span class="text-blue-500">SMP</span>
             </h1>
             
             <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-medium leading-relaxed reveal" style="transition-delay: 100ms;">
@@ -272,16 +286,16 @@
             <div class="md:order-2 reveal">
                 <h2 class="font-heading text-4xl md:text-6xl font-black mb-8 leading-none uppercase italic">CRYSTAL <span class="text-blue-500">WARFARE</span></h2>
                 <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-                    Donut SMP is the home of high-skill combat. With <strong>Lifesteal</strong> mechanics active, every fight is a gamble for your survival. Master the mechanics, hide your base, and dominate the rankings.
+                    Donut SMP is the home of high-skill combat. With <strong>Survival</strong> mechanics active, every fight is a gamble for your survival. Master the mechanics, hide your base, and dominate the rankings.
                 </p>
                 <div class="space-y-4">
                     <div class="flex items-center gap-4">
                         <div class="w-10 h-10 rounded-full bg-blue-600/20 flex items-center justify-center text-blue-400 shrink-0"><i data-lucide="skull"></i></div>
-                        <span class="font-bold text-sm uppercase tracking-widest">Hardcore Lifesteal Mode</span>
+                        <span class="font-bold text-sm uppercase tracking-widest">Be Careful From Other Players</span>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="w-10 h-10 rounded-full bg-blue-600/20 flex items-center justify-center text-blue-400 shrink-0"><i data-lucide="shield-off"></i></div>
-                        <span class="font-bold text-sm uppercase tracking-widest">No Rules Survival / Griefing</span>
+                        <span class="font-bold text-sm uppercase tracking-widest"> Your Base Is Not Secure</span>
                     </div>
                 </div>
             </div>
@@ -292,7 +306,7 @@
     </section>
 
     <section class="py-24 px-6">
-        <div class="max-w-7xl mx-auto glass p-8 md:p-20 rounded-[1.5rem] flex flex-col lg:flex-row items-center gap-12 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto glass p-8 md:p-20 rounded-[4rem] flex flex-col lg:flex-row items-center gap-12 overflow-hidden relative">
             <div class="absolute -top-12 -right-12 opacity-5 pointer-events-none">
                 <img src="input_file_0.png" alt="Ghost Logo" class="w-96">
             </div>
@@ -313,7 +327,7 @@
         </div>
     </section>
 
-     <footer class="pt-24 pb-12 border-t border-white/5 bg-black/40 px-6">
+    <footer class="pt-24 pb-12 border-t border-white/5 bg-black/40 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div>
@@ -321,45 +335,24 @@
                         <img src="input_file_0.png" alt="Logo" class="w-10 h-10">
                         <span class="font-heading text-xl font-black uppercase tracking-tighter text-white">Donut SMP</span>
                     </div>
-                    <p class="text-gray-500 text-sm leading-relaxed mb-6 italic">The premier competitive Minecraft survival server. Survive the wild, grind your fortune, and dominate the ranks.</p>
-                    <div class="flex gap-4">
-                        <a href="https://discord.gg/donutsmp" class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:text-blue-400 transition-all"><i data-lucide="message-square" size="18"></i></a>
-                        <a href="https://store.donutsmp.net/store" class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:text-blue-400 transition-all"><i data-lucide="shopping-cart" size="18"></i></a>
-                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 italic">The premier competitive Minecraft survival server.</p>
                 </div>
                 <div>
                     <h5 class="text-white font-black text-xs uppercase tracking-widest mb-6">Server Links</h5>
                     <ul class="space-y-4 text-sm font-bold">
                         <li><a href="https://store.donutsmp.net/store" class="hover:text-blue-400 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" size="14"></i> Official Store</a></li>
                         <li><a href="https://discord.gg/donutsmp" class="hover:text-blue-400 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" size="14"></i> Join Discord</a></li>
-                        <li><a href="#"
                     </ul>
                 </div>
                 <div>
-                    <h5 class="text-white font-black text-xs uppercase tracking-widest mb-6">Server Status</h5>
-                    <div class="space-y-3">
-                        <div class="glass p-4 rounded-xl border-blue-500/10">
-                            <div class="text-[10px] text-gray-500 font-bold uppercase mb-1">Players</div>
-                            <div class="text-blue-400 font-black italic">50,000+ </div>
-                        </div>
-                        <div class="glass p-4 rounded-xl border-blue-500/10">
-                            <div class="text-[10px] text-gray-500 font-bold uppercase mb-1">Performance</div>
-                            <div class="text-white font-black italic">STABLE 20 TPS</div>
-                        </div>
+                    <h5 class="text-white font-black text-xs uppercase tracking-widest mb-6">Players</h5>
+                    <div class="glass p-4 rounded-xl border-blue-500/10">
+                        <div class="text-blue-400 font-black italic">50,000+</div>
                     </div>
                 </div>
                 <div>
-                    <h5 class="text-white font-black text-xs uppercase tracking-widest mb-6">Support</h5>
-                    <p class="text-gray-500 text-xs leading-relaxed mb-6 italic">Owned and operated by <span class="text-white font-bold">DrDonut</span>. Join our discord for technical support and bug reports.</p>
-                    <button onclick="copyIP(this)" class="w-full bg-blue-600/10 border border-blue-500/30 text-blue-400 py-3 rounded-xl font-black text-xs hover:bg-blue-600 hover:text-white transition-all uppercase">COPY IP: DONUTSMP.NET</button>
-                </div>
-            </div>
-            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="text-[10px] text-gray-600 font-bold tracking-[0.2em] uppercase text-center md:text-left">
-                     All rights reserved. Not affiliated with Mojang.
-                </div>
-                <div class="text-[9px] text-gray-700 max-w-sm text-center md:text-right uppercase leading-loose">
-                    Purchases support server development. Minecraft is a trademark of Mojang Synergies AB.
+                    <h5 class="text-white font-black text-xs uppercase tracking-widest mb-6">Join Now</h5>
+                    <button onclick="copyIP(this)" class="w-full bg-blue-600/10 border border-blue-500/30 text-blue-400 py-3 rounded-xl font-black text-xs hover:bg-blue-600 hover:text-white transition-all">IP: DONUTSMP.NET</button>
                 </div>
             </div>
         </div>
@@ -368,7 +361,7 @@
     <script>
         lucide.createIcons();
 
-        // LOADER SCRIPT
+        // LOADER SCRIPT - FULLY CENTERED LOGIC
         document.addEventListener('DOMContentLoaded', () => {
             const bar = document.getElementById('loader-bar-fill');
             const percentText = document.getElementById('loader-percent');
@@ -381,9 +374,9 @@
                 if (progress >= 100) {
                     progress = 100;
                     clearInterval(interval);
-                    
                     setTimeout(() => {
                         loaderWrapper.classList.add('fade-out');
+                        setTimeout(() => loaderWrapper.style.display = 'none', 800);
                     }, 600);
                 }
                 
@@ -392,14 +385,12 @@
             }, 80);
         });
 
-        // Parallax Scroll Logic
+        // Parallax Scroll
         window.addEventListener('scroll', () => {
             const scroll = window.pageYOffset;
             const bg = document.getElementById('parallax-bg');
             const nav = document.getElementById('navbar');
-            
             if (bg) bg.style.transform = `translateY(${scroll * 0.4}px)`;
-            
             if (scroll > 60) {
                 nav.classList.add('glass', 'py-3');
                 nav.classList.remove('py-4');
@@ -409,7 +400,7 @@
             }
         });
 
-        // Simple Intersection Observer for section reveals
+        // Reveals
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) entry.target.classList.add('active');
@@ -417,19 +408,13 @@
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // IP Copy Function
+        // IP Copy
         function copyIP(btn) {
-            const ip = "donutsmp.net";
-            navigator.clipboard.writeText(ip);
-            
+            navigator.clipboard.writeText("donutsmp.net");
             const textSpan = btn.querySelector('#ip-text') || btn;
             const original = textSpan.innerText;
-            
             textSpan.innerText = 'IP COPIED!';
-            
-            setTimeout(() => {
-                textSpan.innerText = original;
-            }, 2500);
+            setTimeout(() => { textSpan.innerText = original; }, 2500);
         }
     </script>
 </body>
